@@ -1,11 +1,59 @@
 /* add styles here */
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-  display:flex;
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
-.stars__star{
-  background-color: lightgray;
+
+.star__stars {
+  margin: auto 5px;
+}
+
+.stars.stars--0,
+.stars.stars--1,
+.stars.stars--2,
+.stars.stars--3,
+.stars.stars--4,
+.stars.stars--5 {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.stars.stars--0 .star,
+.stars.stars--1 .star,
+.stars.stars--2 .star,
+.stars.stars--3 .star,
+.stars.stars--4 .star,
+.stars.stars--5 .star {
+  background-image: url('images/star.svg');
+  background-size: cover;
+  background-position: center;
+  margin: 4px auto;
+  width: 16px;
+  height: 16px;
+}
+
+.stars.stars--1 :first-child {
+  background-image: url('images/star-active.svg');
+}
+
+.stars.stars--2 :nth-child(-n + 2) {
+  background-image: url('images/star-active.svg');
+}
+
+.stars.stars--3 :nth-child(-n + 3) {
+  background-image: url('images/star-active.svg');
+}
+
+.stars.stars--4 :nth-child(-n + 4) {
+  background-image: url('images/star-active.svg');
+}
+
+.stars.stars--5 .star {
+  background-image: url('images/star-active.svg');
 }
