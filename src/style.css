@@ -1,1 +1,11 @@
 /* add styles here */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  display:flex;
+}
+.stars__star{
+  background-color: lightgray;
+}
